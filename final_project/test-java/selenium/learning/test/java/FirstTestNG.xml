@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" > <!-- parallel="tests"-->
+    <test thread-count="5" name="LoginToApplicationTest">
+        <parameter name="userName" value="mercury"></parameter>
+        <parameter name="password" value="mercury"></parameter>
+        <classes>
+            <class name="LoginToApplicationTest"></class>
+        </classes>
+    </test>
+    <test thread-count="5" name="LoginToApplicationTest2">
+         <parameter name="userName" value="Cart"></parameter>
+         <parameter name="password" value="Cart"></parameter>
+         <classes>
+             <class name="LoginToApplicationTest"></class>
+         </classes>
+     </test>
+    <test thread-count="5" name="LoginToApplicationTest3">
+    <parameter name="userName" value="Mercury"></parameter>
+    <parameter name="password" value="Mercury"></parameter>
+    <classes>
+        <class name="LoginToApplicationTest"></class>
+    </classes>
+    </test>
+</suite> <!-- Suite -->
